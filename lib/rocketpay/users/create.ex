@@ -5,7 +5,7 @@ defmodule Rocketpay.Users.Create do
 
   def call(params) do
     params
-    |> User.changeset(params)
+    |> User.changeset()
     |> Repo.insert()
   end
 end
