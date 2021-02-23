@@ -23,3 +23,6 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   - {mix test} execute test
   - {iex -S mix} execute elixir, can call coded functions
   - {mix phx.server} execute server, can be watched in localhost:4000/dashboard
+  - {mix ecto.create} create database
+  - {mix ecto.gen.migration migration_name.exs} create migration
+  - {mix ecto.migrate} run migrations
