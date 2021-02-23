@@ -1,9 +1,9 @@
 defmodule :"Elixir.Rocketpay.Repo.Migrations.CreateUserTable.exs" do
   use Ecto.Migration
 
-  def change do
+  def up do
 
-    create table :users do
+    create table (:users) do
       add :name, :string
       add :age, :integer
       add :email, :string
@@ -16,5 +16,10 @@ defmodule :"Elixir.Rocketpay.Repo.Migrations.CreateUserTable.exs" do
     create unique_index(:users, [ :email ])
     create unique_index(:users, [ :nickname ])
 
+  end
+
+
+  def down do
+    drop table(:users)
   end
 end
